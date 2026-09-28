@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Blue Baby Princess 💙</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            font-family: Arial, sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #dff3ff,
+                    #eef9ff,
+                    #d6efff
+                );
+
+            color: #333;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+
+            overflow-x: hidden;
+        }
+
+
+        /* ================= FLOATING DECORATIONS ================= */
+
+        .decor {
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+
+            opacity: 0.7;
+
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .decor1 {
+            top: 8%;
+            left: 8%;
+            font-size: 25px;
+        }
+
+        .decor2 {
+            top: 15%;
+            right: 10%;
+            font-size: 22px;
+            animation-delay: 1s;
+        }
+
+        .decor3 {
+            bottom: 15%;
+            left: 10%;
+            font-size: 20px;
+            animation-delay: 2s;
+        }
+
+        .decor4 {
+            bottom: 10%;
+            right: 8%;
+            font-size: 27px;
+            animation-delay: 3s;
+        }
+
+        .decor5 {
+            top: 45%;
+            left: 3%;
+            font-size: 17px;
+            animation-delay: 1.5s;
+        }
+
+        .decor6 {
+            top: 55%;
+            right: 4%;
+            font-size: 18px;
+            animation-delay: 2.5s;
+        }
+
+
+        @keyframes float {
+
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(8deg);
+            }
+
+        }
+
+
+        /* ================= MAIN PAGE ================= */
+
+        .page {
+            width: 100%;
+            max-width: 520px;
+
+            text-align: center;
+
+            position: relative;
+            z-index: 2;
+        }
+
+
+        /* ================= INTRO ================= */
+
+        .intro {
+            background: rgba(255, 255, 255, 0.95);
+
+            padding: 40px 25px;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 15px 40px rgba(60, 130, 180, 0.15);
+
+            border: 2px solid rgba(255, 255, 255, 0.8);
+
+            animation: fadeIn 0.8s ease;
+        }
+
+
+        .heart {
+            font-size: 65px;
+
+            animation: heartbeat 1.5s infinite;
+
+            margin-bottom: 10px;
+        }
+
+
+        h1 {
+            color: #4a90c2;
+
+            font-size: 32px;
+
+            margin: 10px 0 20px;
+        }
+
+
+        p {
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            color: #555;
+        }
+
+
+        .continue {
+            margin-top: 20px;
+        }
+
+
+        /* ================= LETTER ================= */
+
+        .letter-container {
+            display: none;
+
+            animation: letterOpen 0.8s ease;
+        }
+
+
+        .letter {
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fffdf7,
+                    #fffaf0
+                );
+
+            padding: 35px 28px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 18px 45px rgba(60, 90, 110, 0.18);
+
+            text-align: left;
+
+            border: 2px solid #f2e6cd;
+
+            overflow: hidden;
+        }
+
+
+        /* Little blue hearts in corners */
+
+        .letter::before {
+            content: "💙";
+
+            position: absolute;
+
+            top: 12px;
+            left: 15px;
+
+            font-size: 20px;
+
+            opacity: 0.6;
+        }
+
+
+        .letter::after {
+            content: "💙";
+
+            position: absolute;
+
+            bottom: 12px;
+            right: 15px;
+
+            font-size: 20px;
+
+            opacity: 0.6;
+        }
+
+
+        .letter-title {
+
+            text-align: center;
+
+            color: #4a90c2;
+
+            font-family: Georgia, serif;
+
+            font-size: 29px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .letter p {
+
+            font-family: Georgia, serif;
+
+            font-size: 18px;
+
+            line-height: 1.9;
+
+            color: #403d38;
+
+            text-align: left;
+        }
+
+
+        /* ================= PROPOSAL ================= */
+
+        .proposal {
+
+            text-align: center;
+
+            margin-top: 35px;
+
+            padding-top: 30px;
+
+            border-top: 1px dashed #d9cdb8;
+        }
+
+
+        .proposal h2 {
+
+            color: #4a90c2;
+
+            font-family: Georgia, serif;
+
+            font-size: 30px;
+
+            margin-bottom: 22px;
+        }
+
+
+        /* ================= BUTTONS ================= */
+
+        button {
+
+            border: none;
+
+            border-radius: 30px;
+
+            padding: 15px 30px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+            margin: 6px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+
+        button:hover {
+
+            transform: translateY(-3px);
+        }
+
+
+        button:active {
+
+            transform: scale(0.94);
+        }
+
+
+        .yes {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #5ba7d8,
+                    #418fc3
+                );
+
+            color: white;
+
+            box-shadow:
+                0 7px 18px rgba(70, 140, 190, 0.3);
+        }
+
+
+        .yes:hover {
+
+            box-shadow:
+                0 10px 25px rgba(70, 140, 190, 0.4);
+        }
+
+
+        .no {
+
+            background: #eeeeee;
+
+            color: #555;
+        }
+
+
+        .no:hover {
+
+            background: #e3e3e3;
+        }
+
+
+        /* ================= NO MESSAGE ================= */
+
+        .no-message {
+
+            text-align: center;
+
+            color: #e76f8a !important;
+
+            font-size: 16px !important;
+
+            min-height: 30px;
+
+            margin-top: 12px;
+
+            font-family: Arial, sans-serif !important;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+
+        /* ================= SUCCESS ================= */
+
+        .success {
+
+            display: none;
+
+            background: rgba(255, 255, 255, 0.96);
+
+            padding: 45px 25px;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 15px 45px rgba(60, 130, 180, 0.2);
+
+            text-align: center;
+
+            animation: fadeIn 1s ease;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .success-heart {
+
+            font-size: 75px;
+
+            animation: heartbeat 1.3s infinite;
+        }
+
+
+        .success h1 {
+
+            color: #4a90c2;
+
+            font-size: 31px;
+
+            line-height: 1.4;
+        }
+
+
+        .success p {
+
+            font-size: 19px;
+        }
+
+
+        .ring {
+
+            font-size: 50px;
+
+            margin-top: 20px;
+
+            animation: ringBounce 1.5s infinite;
+        }
+
+
+        /* ================= CONFETTI ================= */
+
+        .confetti {
+
+            position: fixed;
+
+            top: -20px;
+
+            width: 10px;
+            height: 10px;
+
+            z-index: 9999;
+
+            pointer-events: none;
+
+            animation:
+                confettiFall linear forwards;
+        }
+
+
+        @keyframes confettiFall {
+
+            0% {
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 1;
+            }
+
+            100% {
+                transform:
+                    translateY(110vh)
+                    rotate(720deg);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* ================= ANIMATIONS ================= */
+
+        @keyframes fadeIn {
+
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+        @keyframes letterOpen {
+
+            from {
+                opacity: 0;
+                transform:
+                    scale(0.96)
+                    translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform:
+                    scale(1)
+                    translateY(0);
+            }
+
+        }
+
+
+        @keyframes heartbeat {
+
+            0% {
+                transform: scale(1);
+            }
+
+            15% {
+                transform: scale(1.12);
+            }
+
+            30% {
+                transform: scale(1);
+            }
+
+            45% {
+                transform: scale(1.12);
+            }
+
+            60% {
+                transform: scale(1);
+            }
+
+        }
+
+
+        @keyframes ringBounce {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 480px) {
+
+            body {
+                padding: 14px;
+            }
+
+
+            .intro {
+                padding: 32px 20px;
+            }
+
+
+            h1 {
+                font-size: 28px;
+            }
+
+
+            .heart {
+                font-size: 55px;
+            }
+
+
+            .letter {
+                padding: 32px 20px;
+            }
+
+
+            .letter-title {
+                font-size: 24px;
+
+                padding: 0 15px;
+            }
+
+
+            .letter p {
+                font-size: 16px;
+
+                line-height: 1.8;
+            }
+
+
+            .proposal h2 {
+                font-size: 26px;
+            }
+
+
+            button {
+
+                padding: 13px 23px;
+
+                font-size: 15px;
+            }
+
+
+            .success {
+
+                padding: 40px 20px;
+            }
+
+
+            .success h1 {
+
+                font-size: 27px;
+            }
+
+
+            .decor {
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= FLOATING DECORATIONS ================= -->
+
+    <div class="decor decor1">💙</div>
+
+    <div class="decor decor2">✨</div>
+
+    <div class="decor decor3">🦋</div>
+
+    <div class="decor decor4">💙</div>
+
+    <div class="decor decor5">✨</div>
+
+    <div class="decor decor6">💕</div>
+
+
+
+    <div class="page">
+
+
+        <!-- ================= INTRO ================= -->
+
+        <div class="intro" id="intro">
+
+            <div class="heart">
+                💙
+            </div>
+
+
+            <h1>
+                I have something for you...
+            </h1>
+
+
+            <p>
+                I don't know much about proposing,
+                so I thought I'd do it my own way. 🥺
+            </p>
+
+
+            <button
+                class="yes continue"
+                onclick="openLetter()"
+            >
+                Open it 💌
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= LETTER ================= -->
+
+        <div
+            class="letter-container"
+            id="letterContainer"
+        >
+
+            <div class="letter">
+
+
+                <h2 class="letter-title">
+                    To My Blue Baby Princess 💙
+                </h2>
+
+
+                <p>
+                    I don't really know how you're
+                    supposed to propose,
+                </p>
+
+
+                <p>
+                    but I do know I love spending time
+                    with you, I absolutely adore you,
+                    and honestly… I think I've gotten
+                    a little too attached to my drama
+                    queen. 😂❤️
+                </p>
+
+
+                <p>
+                    So, what do you say?
+                </p>
+
+
+                <div class="proposal">
+
+
+                    <h2>
+                        Will you marry me? 😌💍
+                    </h2>
+
+
+                    <div>
+
+
+                        <button
+                            class="yes"
+                            onclick="yesAnswer()"
+                        >
+                            YES ❤️
+                        </button>
+
+
+                        <button
+                            class="no"
+                            onclick="noAnswer()"
+                        >
+                            NO 🥺
+                        </button>
+
+
+                    </div>
+
+
+                    <p
+                        class="no-message"
+                        id="noMessage"
+                    ></p>
+
+
+                </div>
+
+
+                <p
+                    style="
+                        text-align:right;
+                        margin-top:30px;
+                        font-style:italic;
+                    "
+                >
+                    — Me ❤️
+                </p>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= SUCCESS ================= -->
+
+        <div
+            class="success"
+            id="success"
+        >
+
+
+            <div class="success-heart">
+                💙
+            </div>
+
+
+            <h1>
+                Thank you,<br>
+                my blue baby princess 👑💙
+            </h1>
+
+
+            <p>
+                You just made me the happiest person. 🥹
+            </p>
+
+
+            <p>
+                I love you ❤️
+            </p>
+
+
+            <div class="ring">
+                💍
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+
+        /* ================= OPEN LETTER ================= */
+
+        function openLetter() {
+
+            document.getElementById("intro")
+                .style.display = "none";
+
+
+            document.getElementById("letterContainer")
+                .style.display = "block";
+
+        }
+
+
+
+        /* ================= NO BUTTON ================= */
+
+        let noClicks = 0;
+
+
+        function noAnswer() {
+
+            noClicks++;
+
+
+            const message =
+                document.getElementById("noMessage");
+
+
+            if (noClicks === 1) {
+
+                message.innerHTML =
+                    "Try again 😌💙";
+
+            }
+
+
+            else if (noClicks === 2) {
+
+                message.innerHTML =
+                    "Are you sure? 👀";
+
+            }
+
+
+            else if (noClicks === 3) {
+
+                message.innerHTML =
+                    "You're gonna regret this 😭😂";
+
+            }
+
+
+            else if (noClicks === 4) {
+
+                message.innerHTML =
+                    "Hmm... I don't think you meant that 🥺";
+
+            }
+
+
+            else if (noClicks === 5) {
+
+                message.innerHTML =
+                    "Nice try, princess 😌💙";
+
+            }
+
+
+            else if (noClicks === 6) {
+
+                message.innerHTML =
+                    "Okay okay... think again 😭❤️";
+
+            }
+
+
+            else if (noClicks === 7) {
+
+                message.innerHTML =
+                    "The NO button is getting suspicious 👀";
+
+            }
+
+
+            else if (noClicks === 8) {
+
+                message.innerHTML =
+                    "No more NOs, princess 😌💙";
+
+            }
+
+
+            else {
+
+                message.innerHTML =
+                    "Okay princess... no more NOs 😌💙❤️";
+
+            }
+
+        }
+
+
+
+        /* ================= YES BUTTON ================= */
+
+        function yesAnswer() {
+
+            document.getElementById("letterContainer")
+                .style.display = "none";
+
+
+            document.getElementById("success")
+                .style.display = "block";
+
+
+            createConfetti();
+
+        }
+
+
+
+        /* ================= CONFETTI ================= */
+
+        function createConfetti() {
+
+            const symbols = [
+
+                "💙",
+                "❤️",
+                "💕",
+                "✨",
+                "🎉",
+                "💍",
+                "🦋"
+
+            ];
+
+
+            for (let i = 0; i < 70; i++) {
+
+
+                const confetti =
+                    document.createElement("div");
+
+
+                confetti.className =
+                    "confetti";
+
+
+                confetti.innerHTML =
+                    symbols[
+                        Math.floor(
+                            Math.random() *
+                            symbols.length
+                        )
+                    ];
+
+
+                confetti.style.left =
+                    Math.random() * 100 + "vw";
+
+
+                confetti.style.fontSize =
+                    (12 + Math.random() * 15) + "px";
+
+
+                confetti.style.animationDuration =
+                    (2 + Math.random() * 3) + "s";
+
+
+                confetti.style.animationDelay =
+                    Math.random() * 1.5 + "s";
+
+
+                document.body.appendChild(
+                    confetti
+                );
+
+
+                setTimeout(() => {
+
+                    confetti.remove();
+
+                }, 6000);
+
+            }
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
